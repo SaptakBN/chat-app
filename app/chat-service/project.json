@@ -1,7 +1,7 @@
 {
-  "name": "auth-service",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "auth-service/src",
+  "name": "chat-service",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "app/chat-service/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -12,7 +12,7 @@
         "args": [
           "--node-env=production"
         ],
-        "cwd": "auth-service"
+        "cwd": "app/chat-service"
       },
       "configurations": {
         "development": {
@@ -29,8 +29,8 @@
       "cache": true,
       "executor": "@nx/js:prune-lockfile",
       "outputs": [
-        "{workspaceRoot}/dist/auth-service/package.json",
-        "{workspaceRoot}/dist/auth-service/pnpm-lock.yaml"
+        "{workspaceRoot}/dist/app/chat-service/package.json",
+        "{workspaceRoot}/dist/app/chat-service/pnpm-lock.yaml"
       ],
       "options": {
         "buildTarget": "build"
@@ -42,7 +42,7 @@
       ],
       "cache": true,
       "outputs": [
-        "{workspaceRoot}/dist/auth-service/workspace_modules"
+        "{workspaceRoot}/dist/app/chat-service/workspace_modules"
       ],
       "executor": "@nx/js:copy-workspace-modules",
       "options": {
@@ -64,16 +64,16 @@
         "build"
       ],
       "options": {
-        "buildTarget": "auth-service:build",
+        "buildTarget": "chat-service:build",
         "runBuildTargetDependencies": false,
         "inspect": false
       },
       "configurations": {
         "development": {
-          "buildTarget": "auth-service:build:development"
+          "buildTarget": "chat-service:build:development"
         },
         "production": {
-          "buildTarget": "auth-service:build:production"
+          "buildTarget": "chat-service:build:production"
         }
       }
     }

@@ -6,7 +6,7 @@
     "node": "22.14.0"
   },
   "scripts": {
-    "start": "pnpm nx run-many --target=serve --projects=api-gateway,auth-service,chat-service --parallel=3"
+    "start": "pnpm nx run-many --target=serve --projects=api-gateway,auth-service,user-service,chat-service --parallel=3"
   },
   "private": true,
   "devDependencies": {
