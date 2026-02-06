@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@chat-app/contracts": ["contracts/src/index.ts"],
-      "@chat-app/db": ["db/src/index.ts"]
+      "@chat-app/db": ["db/src/index.ts"],
+      "@chat-app/prisma": ["lib/prisma/src/index.ts"],
+      "@chat-app/redis": ["lib/redis/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

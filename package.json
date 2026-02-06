@@ -6,7 +6,7 @@
     "node": "22.14.0"
   },
   "scripts": {
-    "start": "pnpm nx run-many --target=serve --projects=api-gateway,auth-service,user-service,chat-service --parallel=3"
+    "start": "pnpm nx run-many --target=serve --projects=api-gateway,auth-service,user-service,chat-service --parallel=3 --watch"
   },
   "private": true,
   "devDependencies": {
@@ -15,8 +15,8 @@
     "@nestjs/testing": "^11.0.0",
     "@nx/eslint": "22.4.4",
     "@nx/eslint-plugin": "22.4.4",
-    "@nx/js": "22.4.4",
-    "@nx/nest": "^22.4.4",
+    "@nx/js": "22.4.5",
+    "@nx/nest": "22.4.5",
     "@nx/node": "22.4.4",
     "@nx/web": "22.4.4",
     "@nx/webpack": "22.4.4",
@@ -30,7 +30,7 @@
     "jsonc-eslint-parser": "^2.1.0",
     "nx": "22.4.4",
     "prettier": "~3.6.2",
-    "prisma": "^7.3.0",
+    "prisma": "^6.19.2",
     "tslib": "^2.3.0",
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.40.0",
@@ -39,9 +39,11 @@
   "dependencies": {
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
+    "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^11.0.0",
-    "@prisma/client": "^7.3.0",
+    "@prisma/client": "^6.19.2",
     "axios": "^1.6.0",
+    "ioredis": "^5.9.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0"
   }

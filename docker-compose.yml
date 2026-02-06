@@ -1,5 +1,6 @@
 services:
   postgres:
+    container_name: chat-db
     image: postgres:16
     environment:
       POSTGRES_USER: chat
@@ -9,6 +10,7 @@ services:
       - '5431:5432'
 
   redis:
+    container_name: chat-redis
     image: redis:7
     ports:
       - '6370:6379'
